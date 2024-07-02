@@ -3,7 +3,7 @@ package s3objectpresigner
 import (
 	"context"
 	"time"
-
+	"log/slog"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
 	"github.com/usememos/memos/plugin/storage/s3"

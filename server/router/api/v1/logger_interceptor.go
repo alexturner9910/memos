@@ -2,7 +2,7 @@ package v1
 
 import (
 	"context"
-
+	"log/slog"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

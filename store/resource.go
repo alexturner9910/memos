@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 	"path/filepath"
-
+	"log/slog"
 	"github.com/pkg/errors"
 
 	"github.com/usememos/memos/internal/util"
