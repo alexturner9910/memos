@@ -92,16 +92,16 @@ jobs:
       - run:
           name: found github actions config
           command: ':'
-# workflows:
-  # build-and-test:
-  #   jobs:
-      # - build-node:
-      #     requires:
-      #       - test-go
-      # - test-go
-      # - build-go-executables:
-      #     requires:
-      #       - test-go
+workflows:
+  build-and-test:
+    jobs:
+      - build-node:
+          requires:
+            - test-go
+      - test-go
+      - build-go-executables:
+          requires:
+            - test-go
     # - deploy:
     #     requires:
     #       - build-node
