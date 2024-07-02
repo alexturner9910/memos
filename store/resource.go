@@ -2,7 +2,6 @@ package store
 
 import (
 	"context"
-	"log/slog"
 	"os"
 	"path/filepath"
 
