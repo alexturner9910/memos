@@ -28,6 +28,10 @@ jobs:
       - store_artifacts:
           path: ~/artifacts
           destination: node-build
+      - run:
+          name: Print file directory
+          command: ls -al
+                    echo '^^^^^The files in the repo^^^^'
   test-go:
     # Install go modules and run tests
     docker:
