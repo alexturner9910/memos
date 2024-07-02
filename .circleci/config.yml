@@ -3,7 +3,7 @@
 version: 2.1
 orbs:
   node: circleci/node@5
-  go: circleci/go@1.7.3
+  go: circleci/go@1.21.3
 jobs:
   build-node:
     # Build node project
