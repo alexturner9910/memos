@@ -3,7 +3,7 @@
 version: 2.1
 orbs:
   node: circleci/node@5
-  go: circleci/go@1.21.3
+  go: circleci/go@1.7.3
 jobs:
   build-node:
     # Build node project
@@ -30,7 +30,7 @@ jobs:
   test-go:
     # Install go modules and run tests
     docker:
-      - image: cimg/go:1.20
+      - image: cimg/go:1.21.3
     steps:
       - checkout
       - restore_cache:
